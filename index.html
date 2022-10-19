@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="abubakr hisham personal website for front-end developer that shown his portfolio and way to contact">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/src/assets/styles/libs/fontawsome.min.css">
+    <link rel="stylesheet" href="/src/assets/styles/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/assets/styles/libs/tuti.min.css">
+    <link rel="stylesheet" href="/src/assets/styles/style.css">
+    <title>Abubakr</title>
+  </head>
+  <body>
+    <div class="loader"><span class="loader-effect">loading</span></div>
+    <header class="position-sticky">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container"><a class="logo navbar-brand" href="#"><img src="public/favicon.svg" alt="">Abubakr</a>
+          <button class="navbar-toggler" id="navToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse justify-content-end navSiteLinks" id="navbarNav">
+            <ul class="navbar-nav gap-2 siteNav">
+              <li class="nav-item"><a class="navLink nav-link active" href="#home" data-ref="home">home</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="container position-relative">
+          <div class="row hero-content">
+            <div class="content col-lg-6">
+              <h1 class="display-5">Hello World!! <br> TuTi framework</h1>
+              <p class="h5">Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing, Stories and Events</p>
+              <div class="hero-actions d-grid d-md-flex gap-2" role="group">
+                <button class="btn btn-light">Get Action</button>
+                <button class="btn btn-outline-light">Action Two</button>
+              </div>
+            </div>
+            <div class="hero-figure col-lg-6 d-none d-lg-block position-relative"><img class="hero-img img-fluid" src="public/favicon.svg" alt="" width="100"></div>
+          </div>
+        </div>
+        <div class="divider-hero position-absolute">
+          <svg class="divider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 135 30 " preserveAspectRatio="none">
+            <g class="wave parallax1">
+              <use xlink:href="#gentle-wave" x="50" y="0" fill="var(--wave-1)" opacity="0.85"></use>
+            </g>
+            <g class="wave parallax2">
+              <use xlink:href="#gentle-wave" x="50" y="3" fill="var(--wave-2)" opacity="0.7"></use>
+            </g>
+            <g class="wave parallax3">
+              <use xlink:href="#gentle-wave" x="50" y="9" fill="var(--wave-3)" opacity="0.3"></use>
+            </g>
+            <g class="wave parallax4">
+              <use xlink:href="#gentle-wave" x="50" y="6" fill="var(--wave-4)"></use>
+            </g>
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+              <linearGradient id="divider_gradient_hero" x1="-345.889" y1="-12.7304" x2="-301.171" y2="248.093" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#E6E9FF"></stop>
+                <stop offset="0.325521" stop-color="#F5F7FF"></stop>
+                <stop offset="0.627604" stop-color="#F2F5FF"></stop>
+                <stop offset="1" stop-color="#E0E7FF"></stop>
+              </linearGradient>
+              <linearGradient id="divider_gradient_footer" x1="-345.889" y1="-12.7304" x2="-301.171" y2="248.093" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#505D84"></stop>
+                <stop offset="0.34496" stop-color="#38466B"></stop>
+                <stop offset="0.556043" stop-color="#212F53"></stop>
+                <stop offset="1" stop-color="#0A1A3D"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="divider-footer position-absolute"></div>
+      <p>Designed and Powered by - <span class="name"><img src="public/favicon.svg" alt="">Abubakr</span>&copy;2022</p>
+    </footer>
+    <script src="/src/assets/js/bootstrap.bundle.min.js"> </script>
+    <script src="/src/assets/js/helpers/tuti.js" type="module"> </script>
+    <script src="/src/assets/js/main.js" type="module"> </script>
+  </body>
+</html>

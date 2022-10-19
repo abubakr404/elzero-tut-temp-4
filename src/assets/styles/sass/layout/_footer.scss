@@ -1,0 +1,17 @@
+footer {
+  @extend %fCenter;
+  @extend %primaryBackground;
+  min-height: 5rem;
+  position: relative;
+  p {
+    @extend %fCenter;
+    line-height: 2;
+    margin: 0;
+    gap: 0.375rem;
+    .name {
+      @extend %fCenter;
+      color: var(--dark-primary);
+      gap: 0.125rem;
+    }
+  }
+}

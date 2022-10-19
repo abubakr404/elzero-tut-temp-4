@@ -1,0 +1,60 @@
+@import "../../sass/helpers/mixin";
+@import "./groups";
+
+.textCiper {
+  @extend %textCiper;
+}
+
+.fCenter,
+.fCenterH,
+.fCenterV {
+  @extend %fCenter;
+}
+.fCenterV {
+  flex-direction: column;
+}
+.fColC {
+  @extend %fColC;
+}
+.fColS {
+  @extend %fColS;
+}
+
+.fSpacerXC,
+.fSpacerC {
+  @extend %fSpacerC;
+}
+.fSpacerYC {
+  @extend %fSpacerYC;
+}
+
+.fSpacerX,
+.fSpacer {
+  @extend %fSpacer;
+}
+.fSpacerY {
+  @extend %fSpacerY;
+}
+
+.z1,
+.rZ1 {
+  @extend %z1;
+}
+
+.g-col-lg-3 {
+  @include responGridCol(18.75rem, 2.5rem);
+  @include in {
+    grid-template-columns: 1fr;
+  }
+}
+
+.g-col-lg-4 {
+  @include responGridCol(15.625rem, 1.5rem);
+  @include in {
+    grid-template-columns: 1fr;
+  }
+}
+
+.overlay {
+  @extend %overlay;
+}

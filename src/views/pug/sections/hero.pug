@@ -1,0 +1,13 @@
+section.hero#home
+  .container.position-relative
+    .row.hero-content
+      .content.col-lg-6
+        h1.display-5 !{mainHeadline}
+        p.h5=mainPragraph
+        .hero-actions.d-grid.d-md-flex.gap-2(role='group')
+          button.btn.btn-light(type=button)=actionOne
+          button.btn.btn-outline-light(type=button)=actionTwo
+      .hero-figure.col-lg-6.d-none.d-lg-block.position-relative
+        img.hero-img.img-fluid(src= "public/favicon.svg", alt="" width="100")
+  .divider-hero.position-absolute
+    include ../includes/divider

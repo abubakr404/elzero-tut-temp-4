@@ -1,0 +1,180 @@
+// genral colors
+
+$white: #ffffff;
+$black: #000000;
+$primarySeed: #000f33;
+
+// main 2t theme primary gradient color
+
+$twoTeaPrimary0: #000000;
+$twoTeaPrimary10: #001848;
+$twoTeaPrimary20: #002b73;
+$twoTeaPrimary30: #1e438f;
+$twoTeaPrimary40: #3a5ba9;
+$twoTeaPrimary50: #5574c4;
+$twoTeaPrimary60: #6f8ee0;
+$twoTeaPrimary70: #8aa9fc;
+$twoTeaPrimary80: #b2c5ff;
+$twoTeaPrimary90: #dae2ff;
+$twoTeaPrimary95: #eef0ff;
+$twoTeaPrimary99: #fefbff;
+$twoTeaPrimary100: #ffffff;
+$twoTeaPrimary5: #000e32;
+$twoTeaPrimary15: #00225d;
+$twoTeaPrimary25: #0d3783;
+$twoTeaPrimary35: #2d4f9c;
+$twoTeaPrimary98: #faf8ff;
+
+// light theme color source
+
+$twoTeaLightPrimary0: #000000;
+$twoTeaLightPrimary10: #0a1a3d;
+$twoTeaLightPrimary20: #212f53;
+$twoTeaLightPrimary30: #38466b;
+$twoTeaLightPrimary40: #505d84;
+// $twoTeaLightPrimary50: #5574c4;
+// $twoTeaLightPrimary60: #6f8ee0;
+// $twoTeaLightPrimary70: #8aa9fc;
+$twoTeaLightPrimary80: #b7c5f2;
+$twoTeaLightPrimary90: $twoTeaPrimary90;
+// $twoTeaLightPrimary95: #eef0ff;
+// $twoTeaLightPrimary99: #fefbff;
+$twoTeaLightPrimary100: #ffffff;
+
+// surfaces gradient
+
+$mainSurface: linear-gradient(
+  135deg,
+  #e6e9ff -50%,
+  #f5f7ff 25%,
+  #f2f5ff 90%,
+  #e0e7ff 170%
+);
+$secondSurface: linear-gradient(
+  135deg,
+  #f5f7ff -50%,
+  #ebedff 25%,
+  #ebefff 100%,
+  #f2f5ff 170%
+);
+
+// site gradients
+
+$mainGradient: linear-gradient(
+    0deg,
+    rgba($twoTeaLightPrimary20, 0.2),
+    rgba($twoTeaLightPrimary20, 0.2)
+  ),
+  radial-gradient(
+    50% 50% at 50% 50%,
+    $twoTeaLightPrimary40 0%,
+    $twoTeaLightPrimary20 100%
+  );
+
+$lighterPrimaryGradient: linear-gradient(
+    0deg,
+    rgba(56, 70, 107, 0.3),
+    rgba(56, 70, 107, 0.3)
+  ),
+  radial-gradient(
+    50% 50% at 50% 50%,
+    $twoTeaLightPrimary30 0%,
+    $twoTeaLightPrimary20 80%
+  );
+$primaryGradient: linear-gradient(
+    0deg,
+    rgba($twoTeaLightPrimary10, 0.4),
+    rgba($twoTeaLightPrimary10, 0.4)
+  ),
+  linear-gradient(
+    115deg,
+    rgba($twoTeaLightPrimary40, 0.7) -5%,
+    rgba($twoTeaLightPrimary30, 0.7) 40%,
+    rgba($twoTeaLightPrimary20, 0.7) 70%,
+    rgba($twoTeaLightPrimary10, 0.7) 130%
+  ),
+  rgba($twoTeaLightPrimary20, 1);
+$primaryGradientBlendMode: normal, normal, multiply;
+$borderGradient: #0f1628;
+
+// primary
+
+$LightInversePrimary: $twoTeaLightPrimary80;
+$LightOnPrimaryContainer: $twoTeaLightPrimary10;
+$LightOnPrimary: #ffffff;
+$LightPrimaryContainer: $twoTeaLightPrimary90;
+$LightPrimary: $twoTeaLightPrimary40;
+
+$DarkInversePrimary: $twoTeaLightPrimary40;
+$DarkOnPrimaryContainer: $twoTeaLightPrimary90;
+$DarkOnPrimary: $twoTeaLightPrimary20;
+$DarkPrimaryContainer: $twoTeaLightPrimary30;
+$DarkPrimary: $twoTeaLightPrimary80;
+
+// light surface
+
+$LightSurfaceTint: $twoTeaLightPrimary40;
+$LightSurfaceTintColor: $twoTeaLightPrimary40;
+
+// error light
+$LightOnErrorContainer: #410002;
+$LightOnError: #ffffff;
+$LightErrorContainer: #ffdad6;
+$LightError: #ba1a1a;
+
+$LightOnTertiaryContainer: #251724;
+$LightOnTertiary: #ffffff;
+$LightTertiaryContainer: #f3dcee;
+$LightTertiary: #6b5968;
+
+// light general colors
+
+$LightShadow: #000000;
+$LightOutline: #77777b;
+$LightOnBackground: #1b1b1d;
+$LightBackground: #fffbfd;
+
+// light surface
+
+$LightInverseOnSurface: #f3f0f2;
+$LightInverseSurface: #303032;
+$LightOnSurfaceVariant: #46464b;
+$LightOnSurface: #1b1b1d;
+$LightSurfaceVariant: #e3e2e7;
+$LightSurface: #fffbfd;
+
+// related primary
+
+$DarkSurfaceTint: $twoTeaLightPrimary80;
+$DarkSurfaceTintColor: $twoTeaLightPrimary80;
+$DarkOnErrorContainer: #ffb4ab;
+$DarkOnError: #690005;
+$DarkErrorContainer: #93000a;
+
+$LightOnSecondaryContainer: #191b24;
+$LightOnSecondary: #ffffff;
+$LightSecondaryContainer: #e1e2ee;
+$LightSecondary: #5c5e68;
+
+$DarkOnSecondaryContainer: #e1e2ee;
+$DarkOnSecondary: #2d3039;
+$DarkSecondaryContainer: #444650;
+$DarkSecondary: #c4c6d2;
+
+$DarkOnTertiaryContainer: #f3dcee;
+$DarkOnTertiary: #3b2c39;
+$DarkTertiaryContainer: #524250;
+$DarkTertiary: #d7c0d2;
+
+$DarkShadow: #000000;
+$DarkError: #ffb4ab;
+$DarkOutline: #919095;
+$DarkOnBackground: #e4e2e4;
+$DarkBackground: #1b1b1d;
+
+$DarkInverseOnSurface: #303032;
+$DarkInverseSurface: #e4e2e4;
+$DarkOnSurfaceVariant: #c7c6cb;
+$DarkOnSurface: #e4e2e4;
+$DarkSurfaceVariant: #46464b;
+$DarkSurface: #1b1b1d;

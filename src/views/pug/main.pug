@@ -1,0 +1,24 @@
+block bodyContent
+  .loader: span.loader-effect loading
+  header.position-sticky
+    nav.navbar.navbar-expand-lg
+      .container
+        a.logo.navbar-brand(href="#")
+          img(src= "public/favicon.svg", alt="")
+          =myName
+        button#navToggler.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"): span.navbar-toggler-icon
+        .collapse.navbar-collapse.justify-content-end.navSiteLinks#navbarNav
+          ul.navbar-nav.gap-2.siteNav
+            each li in siteLinks
+              li.nav-item: a.navLink.nav-link(href="#"+ li.title class= li.isActive ? "active" : false data-ref=li.title)=li.title
+
+  main
+    include sections/hero
+
+  footer
+    .divider-footer.position-absolute
+    p Designed and Powered by - 
+      span.name
+        img(src= "public/favicon.svg", alt="")
+        =myName
+      |&copy;2022

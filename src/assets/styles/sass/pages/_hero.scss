@@ -1,0 +1,47 @@
+.hero {
+  @extend %fCenter;
+  color: var(--Ab-body-color);
+  background-repeat: no-repeat;
+  background-image: var(--main-gradient);
+  background-position: center;
+  margin-top: -$headerHeight;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  h1 {
+    letter-spacing: 0.125rem;
+    color: inherit;
+    @include in(medium) {
+      font-size: calc(1.475rem + 2vw);
+    }
+  }
+  p {
+    color: inherit;
+    margin: 1.125rem 0;
+    font-weight: 500;
+    max-width: 31.25rem;
+    line-height: 1.5;
+    @include in(toSmall) {
+      font-size: 0.875rem;
+      margin: 1.125rem auto;
+    }
+  }
+  .hero-actions {
+    margin: 1.125rem 0;
+    .btn-outline-light {
+      box-shadow: inset -0.125rem -0.125rem 0 var(--Ab-btn-color);
+    }
+    @include in(small) {
+      justify-content: center;
+    }
+  }
+  .hero-content {
+    align-items: center;
+    position: relative;
+    z-index: 3;
+  }
+  .hero-figure {
+    @extend %z1;
+    padding: 0;
+  }
+}

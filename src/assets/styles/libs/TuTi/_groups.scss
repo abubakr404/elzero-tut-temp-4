@@ -1,0 +1,197 @@
+%transition {
+  transition: var(--main-transition);
+}
+
+%bold {
+  font-weight: bold;
+}
+
+%textCiper {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%z1 {
+  position: relative;
+  z-index: 1;
+}
+
+// %sectionBackground {
+//   background-color: var(--section-background);
+// }
+
+%inversButton {
+  background-color: var(--main-color);
+  color: var(--background-color);
+}
+
+%sectionPadding {
+  padding: {
+    top: var(--main-padding-top);
+    bottom: var(--main-padding-bottom);
+  }
+  @include in(toSmall) {
+    padding: {
+      top: 2rem;
+      bottom: 2rem;
+    }
+  }
+}
+
+%oneColG {
+  @include oneColG;
+}
+
+%twoColG {
+  @include twoColG;
+}
+
+%fCol {
+  @include fCol;
+}
+
+%fColS {
+  @include fCol(start);
+}
+
+%fColC {
+  @include fCol(center);
+}
+
+%fRowY {
+  @include fRowY;
+}
+
+%fRowSY {
+  @include fRowY(start);
+}
+
+%fRowCY {
+  @include fRowY(center);
+}
+
+%fRowEY {
+  @include fRowY(end);
+}
+
+%fColC {
+  @include fCol(center);
+}
+
+%fRow {
+  @include fRow;
+}
+
+%fRowS {
+  @include fRow(start);
+}
+
+%fRowC {
+  @include fRow(center);
+}
+
+%fRowE {
+  @include fRow(end);
+}
+
+%hPCenter {
+  @include hPCenter;
+}
+
+%vPCenter {
+  @include vPCenter;
+}
+
+%fCenterS {
+  @include fCenter(center, flex-start);
+}
+
+%fCenter {
+  @include fCenter;
+}
+
+%fCenterE {
+  @include fCenter(center, flex-end);
+}
+
+%aCenter {
+  @include aCenter;
+}
+
+%fSpacerXC,
+%fSpacerC {
+  @include fSpacer;
+}
+%fSpacerYC {
+  @include fSpacer(column);
+}
+
+%fSpacerX,
+%fSpacer {
+  @include fSpacer(row, false);
+}
+%fSpacerY {
+  @include fSpacer(column, false);
+}
+
+%aRest {
+  @include aRest;
+}
+
+%ulRest {
+  @include ulRest;
+}
+
+%buttonRest {
+  @include buttonRest;
+}
+
+%textareaRest {
+  @include textareaRest;
+}
+
+%overlay {
+  @include overlay;
+}
+
+// %mainBoxShadow {
+//   box-shadow: 0 0.125rem 1rem 0 rgba($headingsColor, 0.1);
+// }
+
+%dotedBackground {
+  position: absolute;
+  z-index: 0;
+  &:first-of-type {
+    transform: translateY(100%);
+    top: 0;
+    right: 0;
+  }
+  &:last-of-type {
+    transform: translateY(-100%);
+    bottom: 0;
+    left: 0;
+  }
+}
+
+// %boxCard {
+//   position: absolute;
+//   @extend %vPCenter;
+//   // background-color: rgba($altBackgroundColor, 0.7);
+//   padding: 3rem;
+//   display: flex;
+//   justify-content: flex-end;
+//   z-index: 1;
+//   @include in(toSmall) {
+//     width: 100% !important;
+//     justify-content: center;
+//   }
+// }
+
+%spikesTop {
+  @include spikes(var(--background-color), 2rem);
+}
+
+%spikesBottom {
+  @include spikes(var(--background-color), 2rem, 100%, bottom);
+}

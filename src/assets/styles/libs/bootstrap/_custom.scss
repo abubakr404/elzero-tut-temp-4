@@ -1,0 +1,106 @@
+// import bootstrap
+@use "../../sass/helpers/variables/variables" as *;
+
+// $body-bg: $mainSurface;
+
+$gray-100: #f1eff3;
+$gray-200: #c5c4c8;
+$gray-300: #acaaaf;
+$gray-400: #919094;
+$gray-500: #77777a;
+$gray-600: #5e5e62;
+$gray-700: #46464a;
+$gray-800: #303034;
+$gray-900: #1b1b1f;
+
+// scss-docs-start color-variables
+$blue: $DarkOnPrimary;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #ab351f;
+$orange: #fd7e14;
+$yellow: #6f5d00;
+$green: #006e2f;
+$teal: #20c997;
+$cyan: #006a6a;
+
+$primary: $blue;
+// $secondary:     $gray-600;
+
+$light: $twoTeaPrimary95;
+
+$color-contrast-dark: $DarkOnPrimary;
+$color-contrast-light: $light;
+
+// scss-docs-end color-variables
+
+$prefix: Ab-;
+
+$body-color: $twoTeaPrimary98;
+
+$border-style: solid;
+$border-color: $light;
+$border-color-translucent: rgba($DarkOnPrimary, 0.075);
+
+$btn-font-size: 0.875rem;
+$btn-font-weight: 500;
+$btn-padding-x: 1.5rem;
+$btn-padding-y: 0.625rem;
+// $btn-border-width: 0.0625rem 0.0625rem 0.3125rem 0.3125rem;
+// $btn-border-radius: 0.375rem;
+
+// scss-docs-end border-variables
+
+$headings-font-weight: 600;
+$headings-line-height: 1.2;
+$headings-color: $LightOnPrimaryContainer;
+
+// $display-font-style:  null;
+$display-font-family: $mainFont;
+$display-font-weight: 700;
+$display-line-height: 1.2;
+
+$navbar-brand-font-size: 1.5rem;
+$navbar-light-color: $body-color;
+$navbar-light-brand-color: $body-color;
+$navbar-light-hover-color: $DarkPrimary;
+$navbar-light-active-color: $DarkPrimary;
+
+// scss-docs-start nav-variables
+$navbar-nav-link-padding-x: 0.5rem;
+$nav-link-padding-y: 0.5rem;
+$nav-link-font-size: 1rem;
+$nav-link-font-weight: 400;
+
+$font-family-sans-serif: #{$mainFont}, system-ui, -apple-system, "Segoe UI",
+  Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// scss-docs-start border-radius-variables
+$border-radius: 0.375rem;
+$border-radius-sm: 0.25rem;
+$border-radius-lg: 0.5rem;
+$border-radius-xl: 1rem;
+$border-radius-2xl: 2rem;
+$border-radius-pill: 50rem;
+// scss-docs-end border-radius-variables
+
+// scss-docs-start box-shadow-variables
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
+$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
+// scss-docs-end box-shadow-variables
+
+// $navbar-light-toggler-icon-bg: ;
+
+// $component-active-color: $white;
+// $component-active-bg: $primary;
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+
+// $input-bg: $body-bg;
+
+// import bootstrap
+@import "../../../../../node_modules/bootstrap/scss/bootstrap";

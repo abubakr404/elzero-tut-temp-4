@@ -1,0 +1,24 @@
+block incTop
+  include variables
+  include data
+  include mixin
+doctype html
+html(lang="en")
+  head
+    block meta
+      include ../includes/meta
+    block links
+      include ../includes/links
+    block styles
+      include ../includes/styles
+    title=title
+  body
+    block bodyContent
+      header
+        block header
+      main
+        block mainContent
+      footer
+        block footerContent
+    block incBottom
+      include ../includes/scripts

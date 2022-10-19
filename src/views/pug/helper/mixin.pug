@@ -1,0 +1,115 @@
+mixin liArray(lisArray)
+  each li in lisArray
+    li=li
+
+mixin liIArray(lisArray, icon)
+  each li in lisArray
+    li #[i(class=icon)] #{li}
+
+mixin liLArray(lisArray)
+  each li in lisArray
+    li: a(href="#"+ li)=li
+
+mixin liLIArray(lisArray)
+  each li in lisArray
+    li: a(href="#"+ li.link) #[i(class=li.icon)] #{li.name}
+
+mixin listOfImages(images, path="", altText="", classes="")
+  each image in images
+    img(class=classes, src= path + image, alt=altText)
+
+mixin socialLinks(socialLinks)
+  ul.social
+    each link in socialLinks
+      li.list-group-item
+        a(href=link.url).social-link.btn.btn-light
+          i(class=link.icon aria-hidden='true')
+
+mixin specialHead(title)
+  h2.text-center.special-head(title=title)=title
+
+mixin articleCard(title, text, img, moreLink)
+  .article-card
+    img(src=img, alt=title + "-image")
+    .content
+      h3=title
+      p=text
+    .more
+      a(href=moreLink) Read More
+      i(class="fas fa-long-arrow-alt-right")
+
+mixin portfolio(portfolio)
+  each work in portfolio
+    .work-card
+      .card-top
+        .works-viewer
+          .work-shuffle
+            each screen in work.screens
+              -if (!screen.isAvailable) continue;
+              button.screen(class= screen.isActive ? "active" : false type=button title=screen.type data-type= screen.type): i(class=screen.icon aria-hidden='true')
+          .imgs-container
+            each screen in work.screens
+              -if (!screen.isAvailable) continue;
+              img.img-fluid(class= screen.isActive ? "active" : false src=imgsPath + screen.img alt="work-image" data-type= screen.type)
+        .technologies
+          .technologies-container
+            each technology in work.technologies
+              button(type=button): i(class=technology.icon aria-hidden='true')
+      .card-bottom
+        .card-info
+          h5.card-title(title=work.title)=work.title
+          a(href=work.desgister.url target="_blank" title=work.desgister.title).card-text
+            i(class=work.desgister.icon aria-hidden='true')
+            =work.desgister.title
+        .card-actions
+          each link in work.links
+            a.btn.btn-light(href=link.url target="_blank").action
+              i(class=link.icon aria-hidden='true')
+              =link.title
+
+mixin blogs(blogs)
+  each blog in blogs
+    .card
+      .blog-container
+        button.close(type=button): i(class="fa fa-xmark" aria-hidden="true")
+        img.card-img-top(src=blog.img, alt=blog.title + "-image")
+        .card-body
+          h5(title=blog.title).card-title=blog.title
+          p.card-text=blog.text
+          p(title=blog.date).card-text: small=blog.date
+      button.card-footer.more(type=button)
+        a(href= blog.moreLink != "" ? blog.moreLink : false) Read More
+        i(class="fa fa-expand")
+
+mixin rateStars(rateNumber = 0, starsNumber = 5)
+  .rate
+    - let index = 0;
+    while index < starsNumber
+      - let star = index < rateNumber ? "filled far fa-star" : "far fa-star";
+      i(class=star)
+      -index++;
+
+mixin downCount(counterTitles = ["Day", "Hour", "Minute", "Second"])
+  .time
+    each title in counterTitles
+      .unit
+        .number 00
+        .title=title
+
+mixin plans(plans, currency, every, planIcon)
+  .plans
+    each plan in plans
+      -
+        let specialClass = plan.special.isSpecial ? "special-plan" : false,
+        specialTitle = plan.special.isSpecial ? plan.special.title: false;
+      .plan(class= specialClass)
+        if plan.special.isSpecial
+          .special-plan-title= specialTitle
+        .plan-head
+          h3=plan.head.title
+          img(src=imgsPath + plan.head.img, alt="")
+          span.price(data-currency=currency data-every=every)= plan.head.price
+        ul.plan-features
+            each feature in plan.features
+              li(style= `--icon: ${planIcon};`)=feature
+        .plan-footer: a(href=plan.footer.link)=plan.footer.title 

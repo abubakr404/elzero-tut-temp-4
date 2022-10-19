@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main-transition: #{$mainTransition};
+
+  --main-surface: #{$mainSurface};
+  --second-surface: #{$secondSurface};
+  --main-gradient: #{$mainGradient};
+  --primary-gradient: #{$primaryGradient};
+  --lighter-primary-gradient: #{$lighterPrimaryGradient};
+
+  --border-gradient: #{$borderGradient};
+
+  --light-primary: #{$LightPrimary};
+  --light-primary-container: #{$LightPrimaryContainer};
+  --light-on-primary: #{$LightOnPrimary};
+  --light-on-primary-container: #{$LightOnPrimaryContainer};
+  --light-inverse-primary: #{$LightInversePrimary};
+
+  --dark-primary: #{$DarkPrimary};
+  --dark-primary-container: #{$DarkPrimaryContainer};
+  --dark-on-primary: #{$DarkOnPrimary};
+  --dark-on-primary-container: #{$DarkOnPrimaryContainer};
+  --dark-inverse-primary: #{$DarkInversePrimary};
+
+  --header-height: #{$headerHeight};
+  --main-padding-top: #{$sectionPadding};
+  --main-padding-bottom: #{$sectionPadding};
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  background: var(--main-surface);
+}
